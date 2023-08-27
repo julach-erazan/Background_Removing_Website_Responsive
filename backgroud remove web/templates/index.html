@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div class="headder">
+        <div class="textDiv">
+            <h1><span>Free</span> Remove Image Background</h1>
+            <p style="margin-top: 20px;">100% Automatically and Easily remove the background from photos.</p>
+        </div>
+
+        <img src="../static/uploads/img.png" alt="before_after">
+
+    </div>
+    <form action='/preview' class='main-form' method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="file">Upload Image</label>
+            <input type="file" id="file" name='file' accept="image/*">
+            <button type='submit'> Remove Background</button>
+        </div>
+    </form>
+</body>
+</html>
