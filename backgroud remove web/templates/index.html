@@ -13,21 +13,31 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="headder">
+    <div class="header">
         <div class="textDiv">
             <h1><span>Free</span> Remove Image Background</h1>
             <p style="margin-top: 20px;">100% Automatically and Easily remove the background from photos.</p>
         </div>
-
         <img src="../static/uploads/img.png" alt="before_after">
-
     </div>
+
     <form action='/preview' class='main-form' method="POST" enctype="multipart/form-data">
         <div>
             <label for="file">Upload Image</label>
-            <input type="file" id="file" name='file' accept="image/*">
-            <button type='submit'> Remove Background</button>
+            <input type="file" id="file" name='file' accept="image/*" required>
+            <button type='submit'>Remove Background</button>
         </div>
     </form>
+
+    <!-- Image Preview Section -->
+    <div id="preview-section" style="display:none;">
+        <img id="preview-img" src="#" alt="Image Preview">
+        <div class="button-container">
+            <button id="remove-bg-btn">Remove Background</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="static/main.js"></script>
 </body>
 </html>
